@@ -143,8 +143,8 @@ h3 {
 }
 
 .headshot.first + .headshot + .headshot ~ .headshot {
-    display: none;
-  }
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .headshot {
@@ -160,3 +160,5 @@ h3 {
     display: none;
   }
 }
+
+/* Bar Chart Styles */
