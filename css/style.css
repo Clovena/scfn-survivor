@@ -1,0 +1,127 @@
+/* Typography */
+
+.rubik-distressed-regular {
+  font-family: 'Rubik Distressed', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kite-one-regular {
+  font-family: 'Kite One', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Global Styles */
+
+:root {
+  --scdfl-red: #f22e3d;
+  --scdfl-blue: #22283a;
+  --scdfl-gold: #f2b22e;
+  --scdfl-gray: #e2d7ce;
+}
+
+* {
+  /* border: 1px solid rebeccapurple; */
+  font-family: 'Kite One', Verdana, sans-serif;
+}
+
+/* Base Elements */
+
+body {
+  background-color: var(--scdfl-gray);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Rubik Distressed', sans-serif;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  margin: 0;
+}
+
+/* Header Styles */
+
+.header {
+  padding: 12px;
+}
+
+.container-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.header-logo {
+  max-width: 180px;
+  height: auto;
+  margin: -6px;
+  filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.5));
+}
+
+@media only screen and (max-width: 600px) {
+  .container-logos {
+    flex-direction: column;
+  }
+
+  .header-logo {
+    margin: -12px;
+  }
+}
+
+#league-name {
+  font-size: 2.5rem;
+}
+
+#season-name {
+  font-size: 1.5rem;
+}
+
+/* Content Styles */
+
+.content {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 120px / 12px;
+  padding: 6px;
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  background-color: var(--scdfl-blue);
+  color: var(--scdfl-gray);
+  padding: 12px;
+  border-radius: 120px / 12px;
+  align-self: stretch;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 12px;
+  align-items: end;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.results-items p {
+  margin: 0;
+}
+
+.headshot {
+  max-width: 50px;
+  height: auto;
+}
